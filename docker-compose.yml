@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      target: runtime
+    environment:
+      NASA_DATA_DIR: /app/data/nasa
+    volumes:
+      - ./data/nasa:/app/data/nasa:ro   # drop B00xx.mat files here
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      target: runtime
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"

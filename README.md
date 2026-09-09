@@ -22,8 +22,8 @@ ML models to report SOH, RUL, a confidence band and a health status.
 docker compose up --build
 ```
 
-- UI: http://localhost:8080
-- API: http://localhost:8000/api/health (Swagger at /docs)
+- UI: http://localhost:8081
+- API: http://localhost:80001api/health (Swagger at /docs)
 
 Without NASA files the backend uses a synthetic NASA-like dataset and says so
 in `GET /api/health` and in the UI's left rail.

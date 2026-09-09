@@ -5,3 +5,7 @@ __pycache__/
 node_modules/
 dist/
 data/nasa/*.mat
+
+CLAUDE.md
+.idea
+SPAR-digital-twin.iml

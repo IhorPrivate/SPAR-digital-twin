@@ -23,7 +23,7 @@ docker compose up --build
 ```
 
 - UI: http://localhost:8081
-- API: http://localhost:80001api/health (Swagger at /docs)
+- API: http://localhost:8001api/health (Swagger at /docs)
 
 Without NASA files the backend uses a synthetic NASA-like dataset and says so
 in `GET /api/health` and in the UI's left rail.
